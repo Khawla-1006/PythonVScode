@@ -1,0 +1,9 @@
+course = "mooc-programming-24"
+
+[exercises.part04-01_hello_visual_studio_code]
+id = 228931
+checksum = "53f03b6ad926b8a798faf5acc5c1c1b5"
+
+[exercises.part04-02_line]
+id = 228934
+checksum = "d74744a81be733c6e8bdfc4d61aedd3d"
