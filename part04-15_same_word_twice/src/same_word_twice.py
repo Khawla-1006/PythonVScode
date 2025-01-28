@@ -1,11 +1,9 @@
 # Write your solution here
-my_word = []
-occurence = 1
+my_words = []
+
 while True :
     word = input("Word: ")
-    my_word.append(word)
-    if word in my_word[0 : len(my_word) - 1] :
-            occurence += 1 
-    if occurence == 2 :
+    if word in my_words :
         break
-print("You typed in", len(my_word)-1,"different words")
+    my_words.append(word)
+print("You typed in", len(my_words),"different words")
