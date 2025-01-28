@@ -14,6 +14,7 @@ while True :
         j += 1
     elif choice == "r" :
         list.pop(len(list) - 1)
+        j = len(list) + 1
     elif choice == "x" :
         break
 print("Bye!")    
