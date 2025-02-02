@@ -2,18 +2,18 @@
 # Note, that at this time the main program should not be written inside
 # if __name__ == "__main__":
 # block!
-def palindromes(string):
-    status = False
 
-    while True : 
-        string = input("Please type in a palindrome:")
-        for i in range(len(string)//2):
-            if string[i] == string[-(i + 1)] :
-                status = True
-        if status == True :
-            print(string,"is a palindrome") 
-            return
-        else :
-            print("that is not a palindrome!")
+def palindromes(string : str):
+    reversed_string = string[::-1]
+    if reversed_string == string :
+        return True
+    return False
 
-palindromes("khawla")
+
+while True :
+    input_string = input("Please type in a palindrome:")
+    if palindromes(input_string) : 
+        break
+    else :
+        print("that wasn't a palindrome")
+print(input_string,"is a palindrome!")
