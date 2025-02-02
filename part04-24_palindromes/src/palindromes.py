@@ -17,3 +17,12 @@ while True :
     else :
         print("that wasn't a palindrome")
 print(input_string,"is a palindrome!")
+
+
+
+# another solution
+def is_palindrome(word : str) :
+    for i in range(len(word)//2):
+        if word[i] != word[len(word) - i - 1]:
+            return False
+    return True
